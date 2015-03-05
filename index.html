@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>code-ninja{io} | code-ninja.io</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style type="text/css">
+body {
+	padding-top:50px;
+	background-image: url("img/background.jpg");
+}
+
+.box {
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    padding: 10px 25px;
+    text-align: center;
+    display: block;
+    margin-top: 60px;
+}
+.box-icon {
+    display: table;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    margin-top: -61px;
+}
+.box-icon span {
+    color: #fff;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.info h4 {
+    font-size: 26px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.info > p {
+    color: #717171;
+    font-size: 16px;
+    padding-top: 10px;
+    text-align: justify;
+}
+.info > a {
+    background-color: #03a9f4;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+.info > a:hover {
+    background-color: #0288d1;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.12);
+    color: #fff;
+    transition: all 0.5s ease 0s;
+}
+    </style>
+</head>
+<body>
+	<div class="container">
+    <div class="row">
+        <div class="box">
+            <div class="box-icon">
+                <img src="img/code-ninja-gmail.png" alt="code-ninja{io}">
+            </div>
+            <div class="info">
+                <h4 class="text-center" style="color: #ffffff">code-ninja{io} CDN</h4>
+                <a href="http://code-ninja.io" class="btn">code-ninja.io</a>
+            </div>
+        </div>
+	</div>
+</div>
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    window.alert = function(){};
+    var defaultCSS = document.getElementById('bootstrap-css');
+    function changeCSS(css){
+        if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />');
+        else $('head > link').filter(':first').replaceWith(defaultCSS);
+    }
+    $( document ).ready(function() {
+      var iframe_height = parseInt($('html').height());
+      window.parent.postMessage( iframe_height, 'http://bootsnipp.com');
+    });
+</script>
+</body>
+</html>

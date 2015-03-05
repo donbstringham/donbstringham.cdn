@@ -1,0 +1,24 @@
+application: code-ninja-io
+version: 1
+api_version: 1
+threadsafe: true
+runtime: python27
+
+handlers:
+- url: /css
+  static_dir: css
+  mime_type: text/css
+
+- url: /js
+  static_dir: js
+  mime_type: text/javascript
+
+- url: /img
+  static_dir: img
+
+- url: /files
+  static_dir: files
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
